@@ -1,4 +1,4 @@
-﻿# 馃摉 English Word Learning 路 鑻辫鍗曡瘝瀛︿範绯荤粺
+# 馃摉 English Word Learning 路 鑻辫鍗曡瘝瀛︿範绯荤粺
 
 > **Spring Boot + JPA 鍚庣 路 Vue 3 鍓嶇 路 闅忔満鍑洪 路 閿欓鏈?路 CSV 璇嶅簱瀵煎叆**
 > Full-stack vocabulary learning system with smart answer checking & wrong-answer notebook
@@ -104,7 +104,7 @@ mvn spring-boot:run
 
 
 <p align="center">
-  <img src="screenshots/demo.gif" alt="Demo" width="720"/>
+  <img src="screenshots/demo.webp" alt="Demo" width="720"/>
 </p>
 ---
 
