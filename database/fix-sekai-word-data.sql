@@ -1,0 +1,23 @@
+USE sekai_friend;
+
+UPDATE sekai_word_words SET phonetic='[i-LAB-er-uht]' WHERE english='elaborate';
+UPDATE sekai_word_words SET phonetic='[AK-yuh-ruht]' WHERE english='accurate';
+UPDATE sekai_word_words SET phonetic='[BEN-uh-fit]' WHERE english='benefit';
+UPDATE sekai_word_words SET phonetic='[CHAL-inj]' WHERE english='challenge';
+UPDATE sekai_word_words SET phonetic='[di-TUR-min]' WHERE english='determine';
+UPDATE sekai_word_words SET phonetic='[i-SEN-shuhl]' WHERE english='essential';
+UPDATE sekai_word_words SET phonetic='[FREE-kwuhnt]' WHERE english='frequent';
+UPDATE sekai_word_words SET phonetic='[JEN-uh-rayt]' WHERE english='generate';
+UPDATE sekai_word_words SET phonetic='[im-PROOV]' WHERE english='improve';
+UPDATE sekai_word_words SET phonetic='[NOL-ij]' WHERE english='knowledge';
+UPDATE sekai_word_words SET phonetic='[mayn-TAYN]' WHERE english='maintain';
+UPDATE sekai_word_words SET phonetic='[op-er-TOO-nuh-tee]' WHERE english='opportunity';
+UPDATE sekai_word_words SET phonetic='[per-TIK-yuh-ler]' WHERE english='particular';
+UPDATE sekai_word_words SET phonetic='[ri-LY-uh-buhl]' WHERE english='reliable';
+UPDATE sekai_word_words SET phonetic='[sig-NIF-i-kuhnt]' WHERE english='significant';
+UPDATE sekai_word_words SET phonetic='[TEM-puh-rer-ee]' WHERE english='temporary';
+UPDATE sekai_word_words SET phonetic='[VAIR-ee-uhs]' WHERE english='various';
+UPDATE sekai_word_words SET chinese='各种各样的；多方面的；多样的' WHERE english='various';
+UPDATE sekai_word_words SET phonetic='[WIZ-duhm]' WHERE english='wisdom';
+UPDATE sekai_word_words SET phonetic='[uh-NAL-uh-sis]' WHERE english='analysis';
+UPDATE sekai_word_words SET phonetic='[STRAT-uh-jee]' WHERE english='strategy';
