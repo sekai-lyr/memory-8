@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar pro-review-hero">
         <div>
-          <span class="eyebrow">会员智能复习中心</span>
           <h1>今天先复习哪些词，系统直接排好</h1>
           <p class="muted">{{ heroText }}</p>
         </div>

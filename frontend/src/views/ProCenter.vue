@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar pro-hero">
         <div>
-          <span class="eyebrow">会员学习教练</span>
           <h1>你的专属复习报告</h1>
           <p class="muted">{{ heroText }}</p>
         </div>

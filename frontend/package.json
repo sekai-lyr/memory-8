@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "@vue/cli-service": "^5.0.8",
+    "animejs": "^4.5.0",
     "axios": "^1.6.8",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
-  },
-  "devDependencies": {}
+  }
 }

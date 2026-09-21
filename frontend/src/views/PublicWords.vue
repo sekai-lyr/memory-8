@@ -4,7 +4,6 @@
     <section class="page">
       <div class="toolbar hero-bar compact-hero">
         <div>
-          <span class="eyebrow">公共词库</span>
           <h1>公共词库</h1>
           <p class="muted">这里放系统内置单词。词库会继续扩，先查词、听发音、看例句，再去练习。</p>
         </div>

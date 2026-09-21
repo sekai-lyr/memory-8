@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar dictation-hero">
         <div>
-          <span class="eyebrow">会员听写训练</span>
           <h1>只听发音，拼出单词</h1>
           <p class="muted">系统优先抽取到期复习、薄弱词和自定义词，训练听音辨词与拼写记忆。</p>
         </div>

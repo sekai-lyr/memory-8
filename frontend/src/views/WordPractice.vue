@@ -42,7 +42,7 @@
 
           <section class="panel practice-card-panel">
             <template v-if="!finished">
-              <div class="word-card focused">
+                <div ref="wordCard" class="word-card focused">
                 <span class="badge">{{ roundTitle }} · {{ Math.min(stats.total + 1, roundSize) }}/{{ roundSize }}</span>
                 <h2>{{ currentWord?.english || '暂无单词' }}</h2>
                 <div class="word-meta">
@@ -192,8 +192,9 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { waapi } from 'animejs'
 import {
   addFavoriteWord,
   addMasteredWord,
@@ -240,6 +241,8 @@ const statusSummary = ref({})
 const stats = ref({ total: 0, correct: 0, wrong: 0, unknown: 0 })
 const membership = ref(null)
 const autoSpeak = ref(localStorage.getItem('autoSpeak') === 'true')
+const wordCard = ref(null)
+let wordCardAnimation = null
 
 const sourceTips = {
   smart: '按到期时间、错误次数和不认识次数自动排序。',
@@ -256,6 +259,18 @@ watch(dailyGoal, value => localStorage.setItem('dailyGoal', value || 30))
 watch(sourceMode, value => localStorage.setItem('practiceSourceMode', value))
 watch(selectedCategory, value => localStorage.setItem('practiceCategory', value))
 watch(autoSpeak, value => localStorage.setItem('autoSpeak', value ? 'true' : 'false'))
+watch(() => currentWord.value?.wordId || currentWord.value?.id, async () => {
+  await nextTick()
+  if (!wordCard.value || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  wordCardAnimation?.cancel()
+  wordCardAnimation = waapi.animate(wordCard.value, {
+    opacity: [0.72, 1],
+    translateX: [16, 0],
+    scale: [0.985, 1],
+    duration: 420,
+    ease: 'outExpo'
+  })
+})
 
 onMounted(async () => {
   await loadMembership()
@@ -536,4 +551,6 @@ function logout() {
   localStorage.removeItem('token')
   router.push('/login')
 }
+
+onUnmounted(() => wordCardAnimation?.cancel())
 </script>

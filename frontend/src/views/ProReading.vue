@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar reading-hero">
         <div>
-          <span class="eyebrow">会员文章生词解析</span>
           <h1>把一篇英文文章变成可练习词包</h1>
           <p class="muted">{{ heroText }}</p>
         </div>

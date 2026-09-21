@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar guide-hero">
         <div>
-          <span class="eyebrow">中文说明模式</span>
           <h1>不知道点哪个？看这里</h1>
           <p class="muted">这里把所有功能翻译成普通话：什么时候用、点进去能做什么、是不是会员功能。</p>
         </div>

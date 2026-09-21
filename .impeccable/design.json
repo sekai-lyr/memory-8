@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T21:08:00+08:00",
+  "title": "Design System: SEKAI Study Workspace",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Mint Signal",
+        "canonical": "#72e4c6",
+        "tonalRamp": ["#12352f", "#1c5148", "#287867", "#3ca88e", "#72e4c6", "#9cf0d7", "#c1f7e8", "#e6fcf6"]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Ink Field",
+        "canonical": "#090f1c",
+        "tonalRamp": ["#05070d", "#090f1c", "#111a2b", "#1a263a", "#29374b", "#5b6879", "#9ca7b3", "#e4e9ed"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Study Surface",
+        "canonical": "rgba(16, 27, 45, .9)",
+        "tonalRamp": ["#0a111e", "#101b2d", "#17253a", "#24344b", "#405269", "#718195", "#adb8c2", "#e4e9ed"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Study Display",
+        "purpose": "Page and hero orientation for the next useful study action."
+      },
+      "label": {
+        "displayName": "Study Label",
+        "purpose": "Compact phonetics, timers, table headers, and state labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-study",
+        "value": "0 18px 44px rgba(2, 7, 16, .22)",
+        "purpose": "Separate primary study panels from the ink field."
+      },
+      {
+        "name": "deep-menu",
+        "value": "0 28px 74px rgba(2, 7, 16, .34)",
+        "purpose": "Keep the expanded navigation menu above the workspace."
+      }
+    ],
+    "motion": [
+      {
+        "name": "route-settle",
+        "value": "650ms outExpo",
+        "purpose": "Orient the user at route changes with opacity and translateY only."
+      },
+      {
+        "name": "control-feedback",
+        "value": "200ms ease",
+        "purpose": "Support hover, focus, and pressed states without layout animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1100px"
+      },
+      {
+        "name": "stack",
+        "value": "860px"
+      },
+      {
+        "name": "compact",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single clear next action in a study flow.",
+      "html": "<button class='ds-btn-primary'>开始练习</button>",
+      "css": ".ds-btn-primary { min-height: 40px; padding: 9px 15px; border: 0; border-radius: 9px; color: #07131a; background: #72e4c6; font: 750 14px/1.2 system-ui, sans-serif; cursor: pointer; transition: transform 200ms ease, background 200ms ease; } .ds-btn-primary:hover { background: #a7f5df; } .ds-btn-primary:focus-visible { outline: 2px solid #72e4c6; outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(1px) scale(.99); }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "A low emphasis action that keeps the primary signal rare.",
+      "html": "<button class='ds-btn-ghost'>稍后处理</button>",
+      "css": ".ds-btn-ghost { min-height: 40px; padding: 9px 15px; border: 1px solid rgba(213, 232, 227, .14); border-radius: 9px; color: #a9b8bf; background: transparent; font: 750 14px/1.2 system-ui, sans-serif; cursor: pointer; transition: color 200ms ease, border-color 200ms ease, background 200ms ease; } .ds-btn-ghost:hover { color: #edf4f1; border-color: rgba(114, 228, 198, .52); background: rgba(114, 228, 198, .08); } .ds-btn-ghost:focus-visible { outline: 2px solid #72e4c6; outline-offset: 3px; }"
+    },
+    {
+      "name": "Study Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A quiet field for words, plans, and study settings.",
+      "html": "<label class='ds-field'><span>输入单词</span><input placeholder='例如: lucid' /></label>",
+      "css": ".ds-field { display: grid; gap: 7px; color: #a9b8bf; font: 700 13px/1.2 system-ui, sans-serif; } .ds-field input { min-height: 42px; padding: 9px 12px; border: 1px solid rgba(213, 232, 227, .14); border-radius: 9px; color: #edf4f1; background: rgba(6, 13, 25, .66); font: 400 14px/1.4 system-ui, sans-serif; } .ds-field input:focus { border-color: #72e4c6; outline: 3px solid rgba(114, 228, 198, .1); outline-offset: 0; }"
+    },
+    {
+      "name": "Study Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "A tonal container for one coherent study task or result.",
+      "html": "<section class='ds-panel'><h3>今日清单</h3><p>先完成这一项，再决定下一步。</p></section>",
+      "css": ".ds-panel { padding: 22px; border: 1px solid rgba(213, 232, 227, .13); border-radius: 16px; color: #edf4f1; background: linear-gradient(145deg, rgba(18, 31, 50, .93), rgba(13, 23, 39, .93)); box-shadow: 0 18px 44px rgba(2, 7, 16, .22); } .ds-panel h3 { margin: 0 0 8px; font: 750 16px/1.3 system-ui, sans-serif; } .ds-panel p { margin: 0; color: #a9b8bf; font: 400 14px/1.6 system-ui, sans-serif; }"
+    },
+    {
+      "name": "Workspace Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "A compact route bar that keeps high value study destinations visible.",
+      "html": "<nav class='ds-nav'><strong>SEKAI</strong><a class='ds-nav-active' href='#'>今日清单</a><a href='#'>开始背词</a><button>更多</button></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 8px; min-height: 72px; padding: 0 18px; border-bottom: 1px solid rgba(213, 232, 227, .13); color: #a9b8bf; background: rgba(8, 14, 25, .86); font: 700 13px/1.2 system-ui, sans-serif; } .ds-nav strong { margin-right: auto; color: #edf4f1; letter-spacing: .05em; } .ds-nav a, .ds-nav button { padding: 7px 10px; border: 0; border-radius: 7px; color: inherit; background: transparent; font: inherit; cursor: pointer; } .ds-nav a:hover, .ds-nav button:hover { color: #edf4f1; background: rgba(114, 228, 198, .07); } .ds-nav .ds-nav-active { color: #72e4c6; background: rgba(114, 228, 198, .1); } .ds-nav a:focus-visible, .ds-nav button:focus-visible { outline: 2px solid #72e4c6; outline-offset: 3px; }"
+    },
+    {
+      "name": "Progress Bar",
+      "kind": "custom",
+      "refersTo": "progress",
+      "description": "A compact visual record of study completion.",
+      "html": "<div class='ds-progress' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'><span style='width: 60%'></span></div>",
+      "css": ".ds-progress { height: 5px; overflow: hidden; border-radius: 999px; background: rgba(213, 232, 227, .12); } .ds-progress span { display: block; height: 100%; border-radius: inherit; background: #72e4c6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Midnight Study Ledger",
+    "overview": "SEKAI is a Chinese first English vocabulary workspace for the moment between intention and action. The visual language treats each screen like a quiet study ledger: midnight ink surfaces hold the content, paper like dividers separate decisions, and a single mint signal marks the next useful move.\n\nThe system is calm, precise, and slightly editorial. It keeps the existing study atmosphere while removing the old cyber grid, scan lines, and multi color neon treatment. The generated study desk image is used as a restrained anchor for hero surfaces and the practice card, so the product story stays tied to vocabulary study rather than generic productivity imagery.",
+    "keyCharacteristics": [
+      "Midnight ink base with cool paper text",
+      "One mint signal accent for action, progress, and focus",
+      "Editorial image crop with negative space for copy",
+      "Compact navigation and task first page layouts",
+      "Motion that supports route orientation and yields to reduced motion preferences"
+    ],
+    "rules": [
+      {
+        "name": "The One Signal Rule",
+        "body": "Mint is a signal, not wallpaper. Keep it concentrated on primary actions, active navigation, progress, focus rings, and meaningful study status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Rarity Rule",
+        "body": "A screen should read clearly in grayscale before mint is added. Mint carries meaning only when it remains scarce.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence First Rule",
+        "body": "Use a meaningful Chinese statement for page orientation before adding a category label. Labels support hierarchy but do not carry the story alone.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Rest Rule",
+        "body": "Surfaces are quiet at rest. Hover changes border, tone, or position slightly and never turns a study screen into a light show.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep one clear next action visible near the page title.",
+      "Do use mint for meaning: action, active state, progress, focus, or study status.",
+      "Do use the study artwork with a calm crop and a dark copy gradient.",
+      "Do preserve visible labels for Chinese learners, especially on forms and study controls.",
+      "Do let mobile layouts stack content and remove decorative image crops when space is tight.",
+      "Do honor prefers-reduced-motion for route entry and background drift."
+    ],
+    "donts": [
+      "Don't reintroduce scan lines, cyber grids, purple neon, or multi accent glow.",
+      "Don't turn every section into a generic card grid with equal visual weight.",
+      "Don't use category eyebrows as the main page hierarchy.",
+      "Don't place long English copy where a concise Chinese instruction is clearer.",
+      "Don't animate width, height, margin, or padding for interaction feedback.",
+      "Don't use a decorative image that competes with the word, answer, or next study action."
+    ]
+  }
+}

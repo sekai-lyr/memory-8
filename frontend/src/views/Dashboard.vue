@@ -4,7 +4,6 @@
     <section class="page">
       <div class="toolbar hero-bar coach-hero">
         <div>
-          <span class="eyebrow">{{ membership?.pro ? '会员中文模式' : '中文模式' }}</span>
           <h1>今天该怎么背？</h1>
           <p class="muted">{{ coachHeadline }}</p>
         </div>

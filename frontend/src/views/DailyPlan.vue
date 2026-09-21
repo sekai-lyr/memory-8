@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar daily-hero">
         <div>
-          <span class="eyebrow">会员每日清单</span>
           <h1>今天照着清单做</h1>
           <p class="muted">系统把背词、错题、目标计划、听写和记录整理成一张清单。做完一项就打勾。</p>
         </div>

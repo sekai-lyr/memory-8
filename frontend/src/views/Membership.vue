@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar membership-hero">
         <div>
-          <span class="eyebrow">高级会员</span>
           <h1>把背单词从“靠自觉”变成“有安排”</h1>
           <p class="muted">高级会员不只解锁容量，还提供每日清单、目标计划、模考冲刺、学习报告、听写训练、智能复习和表格批量导入。</p>
         </div>

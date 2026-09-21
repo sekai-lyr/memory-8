@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar goal-hero">
         <div>
-          <span class="eyebrow">会员目标计划</span>
           <h1>把考试目标拆成每天能做的任务</h1>
           <p class="muted">设置目标日期、每日学习时间和词量后，系统会生成今日任务、周里程碑和进度诊断。</p>
         </div>

@@ -4,7 +4,6 @@
     <section class="page wide-page">
       <div class="toolbar hero-bar exam-hero">
         <div>
-          <span class="eyebrow">会员模考冲刺</span>
           <h1>像考试一样检测词汇掌握度</h1>
           <p class="muted">自动抽取到期复习、薄弱词和自定义词，生成限时选择题，提交后给分数和复盘建议。</p>
         </div>
@@ -80,7 +79,6 @@
           <section class="panel exam-report-panel" v-if="report">
             <div class="toolbar">
               <div>
-                <span class="eyebrow">模考报告</span>
                 <h2>{{ report.levelName }}</h2>
                 <p class="muted">{{ report.recommendation }}</p>
               </div>
