@@ -1,4 +1,16 @@
-# English Word Learning System
+<div align="center">
+
+# 📖 English Word Learning · 英语单词学习系统
+
+> ⭐ Sekai 系列实战项目 08 / 14 · 单项目独立仓库
+
+![Java](https://img.shields.io/badge/Java-red?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Vue 3](https://img.shields.io/badge/Vue3-blue?style=flat-square&logo=vuejs&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-blue?style=flat-square) ![MySQL](https://img.shields.io/badge/MySQL-blue?style=flat-square)
+
+[![Stars](https://img.shields.io/github/stars/sekai-lyr/memory-8?style=flat-square&logo=github)](https://github.com/sekai-lyr/memory-8/stargazers) [![合集](https://img.shields.io/badge/📚_全系列合集-sekai--product-8250DF?style=flat-square)](https://github.com/sekai-lyr/sekai-product)
+
+</div>
+
+---
 
 这是一个完整可运行的英语单词学习 Web 项目。后端使用 Java、Spring Boot、Spring Data JPA、MySQL、Maven；前端使用 Vue 3、Axios 和原生 CSS。当前项目最终访问端口统一为 `8088`。
 
@@ -135,3 +147,36 @@ http://localhost:8088/login
 - `repository` 是数据库操作。
 
 后续可以继续扩展发音功能、音标播放、例句朗读、学习日历、高频错题优先复习、Excel 导出错题本、AI 或向量语义判断等。
+
+---
+
+## 🗺️ Sekai 项目全景导航
+
+本项目是 **Sekai 系列作品集** 的一员，全部 14 个实战项目：
+
+| 项目 | 简介 |
+|------|------|
+| [`memory-1`](https://github.com/sekai-lyr/memory-1) | 📊 二次元数据中心 |
+| [`memory-2`](https://github.com/sekai-lyr/memory-2) | 🛒 二次元电商商城 |
+| [`memory-3`](https://github.com/sekai-lyr/memory-3) | 📔 二次元回忆录 |
+| [`memory-4`](https://github.com/sekai-lyr/memory-4) | 🎋 角色抽签与今日运势 |
+| [`memory-5`](https://github.com/sekai-lyr/memory-5) | 🎵 歌词同步音乐播放器 |
+| [`memory-6`](https://github.com/sekai-lyr/memory-6) | 🎮 原创角色合成小游戏 |
+| [`memory-7`](https://github.com/sekai-lyr/memory-7) | 🖼️ 二次元壁纸图库系统 |
+| [`memory-8`](https://github.com/sekai-lyr/memory-8) | 📖 英语单词学习系统 |
+| [`memory-9`](https://github.com/sekai-lyr/memory-9) | 📝 表单收集与 AI 对话系统 |
+| [`memory-10`](https://github.com/sekai-lyr/memory-10) | 📺 动漫视频导航站 |
+| [`memory-11`](https://github.com/sekai-lyr/memory-11) | ⚔️ 游戏王规则卡牌对战 |
+| [`memory-12`](https://github.com/sekai-lyr/memory-12) | 🎓 游戏化学习平台 |
+| [`memory-13`](https://github.com/sekai-lyr/memory-13) | 🎭 Ren'Py 视觉小说 |
+| [`memory-14`](https://github.com/sekai-lyr/memory-14) | 🤖 识番推荐与 RAG 助手平台 |
+
+📦 **一站式浏览全部项目**：[sekai-lyr/sekai-product](https://github.com/sekai-lyr/sekai-product)（monorepo 合集）
+
+<div align="center">
+
+**如果这个项目对你有帮助或启发，欢迎点一个 ⭐ Star 支持一下！**
+
+*Made with ❤️ by [sekai-lyr](https://github.com/sekai-lyr)*
+
+</div>
